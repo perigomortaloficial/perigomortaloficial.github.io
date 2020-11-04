@@ -69,12 +69,11 @@ ul{
     text-decoration: none;
     text-transform: uppercase;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 10%;
 }
 
 .banner .btn{
-    margin-top: 220px;
-    margin-left: 580px;
+    margin-top:100px;
 }
 
 .sobre{
@@ -154,7 +153,21 @@ ul{
 #horarios h2{
     margin: 0px 15px;
 }
+.homebox{
+    color: white;
+    padding: 5em;
+    box-shadow: #000000;
+    font-size: larger;
+}
 
+.homebox img{
+    margin-top: 5em;
+    margin-bottom: 3em;
+    margin-left: 30%;
+    height: 300px;
+    width: 500px;
+    box-shadow: 34px 34px 34px #000000;
+}
 .em_breve{
     width: 65%;
 }
@@ -179,7 +192,10 @@ ul{
     width: 100%;
     height: 160px;
 }
-
+.card a{
+    color: white;
+    text-decoration: none;
+}
 .card h4{
     padding: 1em 0 0 1em;
 }
@@ -359,9 +375,15 @@ table a{
 
 }/*Fim media mas 1200px  */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1050px){
     header img{
         max-width: 180px;
+    }
+    .homebox img{
+        display: none;
+        right: -12%;
+        top: 580px;
+        width: 450px;
     }
     .container{
         width: 98%;
@@ -408,20 +430,26 @@ table a{
     .mob_logo_sociais{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
     }
     .mob_logo_sociais img{
         max-width: 200px;
+        height: 200px;
+        padding: 1em;
     }
 } /* Fim media mas 768px */
 
 @media screen and (max-width: 490px){
     .cabecalho .fa-bars{
         display: block;
-        padding: 5px;
+        padding: 10px;
+        width: 100%;
+        top: 580px;
     }
-    /* Champion ocultado no mobile */
-    .btn{
+    .homebox{
+        padding: 1em;
+    }
+    .homebox img{
         display: none;
         right: -12%;
         top: 580px;

@@ -246,8 +246,9 @@ footer h6{
     font-size: 1em;
 }
 footer p{
+    padding-top: 2em;
     text-align: center;
-    color: #474747;
+    color: #d3d3d3;
 }
 
 
@@ -486,7 +487,6 @@ table a{
        width: 100%;
        align-items: center;
        padding: 0 1.5em;
-       position: static;
     }
     .cabecalho ul a{
         padding: 0.5em 60% 1em 2.5em;

@@ -13,6 +13,71 @@ body{
     background-color: var(--background);
     font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
+.icon{
+    width: 20px;
+    height: 60px;
+
+    background-color: rgb(48, 48, 48);
+
+    border-radius: 10%;
+
+    position: relative;
+}
+
+.icon:after{
+    content: '';
+
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+    width: 70%;
+    height: 10%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    transition: 1s ease;
+}
+
+.icon:before{
+    content: '';
+
+    position: absolute;
+    top: 60%;
+    left: 45%;
+
+    width: 40%;
+    height: 10%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    transition: 1s ease;
+}
+
+#icon:checked ~ label .icon::after{
+    transform: rotate(225deg);
+
+    width: 70%;
+    height: 10%;
+
+    top: 45%;
+    left: 15%;
+}
+
+#icon:checked ~ label .icon::before{
+    transform: rotate(-225deg);
+
+    width: 70%;
+    height: 10%;
+
+    top: 45%;
+    left: 15%;
+}
+
 .gradient{
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 18%, rgba(9,9,121,1) 96%, rgba(0,212,255,1) 100%);
@@ -365,6 +430,7 @@ table a{
     text-decoration: none;
 }
 @media screen and (max-width: 1200px){
+
     .champion{        
         right: 3%;
         width: 50%;
@@ -476,9 +542,13 @@ table a{
     
     #menu{
         position: absolute; 
-        top: 77px;
-        background-color: var(--background);
+        top: 100px;
+
+        border-radius: 5%;
+
+        background-color: rgb(48, 48, 48);
         width: 100%;
+        height: 40%;
         display: none;
     }
     .cabecalho div{

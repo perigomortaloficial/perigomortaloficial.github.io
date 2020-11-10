@@ -1,0 +1,121 @@
+
+:root{
+    --background: #393D46;
+    --pink: #fc1e8b;
+    --purple: #7278c3;
+    --blue: #00a8dc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-color: #1a1a1a;
+
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+header img{
+    width: 80px;
+    height: 80px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+
+    background-color: #333;
+
+    border-radius: 10%;
+
+    position: relative;
+}
+
+.icon:after{
+    content: '';
+
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+    width: 70%;
+    height: 10%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    transition: 1s ease;
+}
+
+.icon:before{
+    content: '';
+
+    position: absolute;
+    top: 60%;
+    left: 45%;
+
+    width: 40%;
+    height: 10%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    transition: 1s ease;
+}
+
+#icon:checked ~ label .icon::after{
+    transform: rotate(225deg);
+
+    width: 70%;
+    height: 10%;
+
+    top: 45%;
+    left: 15%;
+}
+
+#icon:checked ~ label .icon::before{
+    transform: rotate(-225deg);
+
+    width: 70%;
+    height: 10%;
+
+    top: 45%;
+    left: 15%;
+}
+
+#menu{
+    position: static;
+}
+
+#menu{
+    position: absolute; 
+    top: 77px;
+    background-color: var(--background);
+    width: 100%;
+    display: none;
+}

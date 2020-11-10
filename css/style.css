@@ -11,7 +11,7 @@
 }
 body{
     background-color: var(--background);
-    font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Syne Mono', monospace;
 }
 .icon{
     width: 20px;
@@ -99,8 +99,8 @@ header a{
     font-size: 2em;
 }
 header img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     padding: 0 auto;
     margin: 0 auto;
 }
@@ -430,6 +430,7 @@ table a{
     text-decoration: none;
 }
 @media screen and (max-width: 1200px){
+    .cabecalho .fa
 
     .champion{        
         right: 3%;
@@ -513,16 +514,17 @@ table a{
         padding: 1em;
     }
 } /* Fim media mas 768px */
-
 @media screen and (max-width: 490px){
-    .cabecalho .fa-bars{
+
+} .cabecalho .fa-bars{
         display: block;
         padding: 10px;
         width: 100%;
         top: 580px;
     }
-    .banner{
-        background-image: url("../Images/banni.jpg");
+    header img{
+        width: 90px;
+        height: 90px;
     }
     header a{
         font-size: 1em;
@@ -547,8 +549,10 @@ table a{
         border-radius: 5%;
 
         background-color: rgb(48, 48, 48);
+        font-size: larger;
+
         width: 100%;
-        height: 40%;
+        height: 80%;
         display: none;
     }
     .cabecalho div{
@@ -559,7 +563,119 @@ table a{
        padding: 0 1.5em;
     }
     .cabecalho ul a{
-        padding: 0.5em 60% 1em 2.5em;
+        padding: 0.8em 60% 1em 2.5em;
+        margin: 0.1em 0;
+        
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 250px;
+    }
+    .sobre .container div{
+        width: 85%;
+    }
+    .sobre h1{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .sobre p{
+        text-align: justify;
+    }
+    #horarios .container{
+        flex-direction: column;
+    }
+    .ao_vivo, .em_breve{
+        padding: 1em;
+        border: none;
+        
+    }
+    
+    .partida{
+        margin: 0.5em 0;
+    }
+   .card{
+       flex-direction: column;
+       
+   }
+   .card img{
+       width: 100%;
+       object-fit:cover ;
+       object-position: top;
+   }
+   .noticias{
+       padding-right: 12px;
+       width: 92%;
+       
+   }
+   .recentes{
+       padding: 0.5em;
+   }
+   .content{
+       flex-direction: column;
+   }
+   footer .container{
+       flex-direction: column;
+   }
+   footer h6{
+    text-align: start;
+   }
+   .mob_logo_sociais{
+       padding: 15px;
+   }
+   
+
+@media screen and (max-width: 490px){
+    .cabecalho .fa-bars{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        top: 580px;
+    }
+    .banner{
+        background-image: url("../Images/banni.jpg");
+    }
+    header img{
+        width: 90px;
+        height: 90px;
+    }
+    header a{
+        font-size: 1em;
+    }
+    header a:hover{
+        text-decoration: none;
+    }
+    .homebox{
+        padding: 1em;
+    }
+    .homebox img{
+        display: none;
+        right: -12%;
+        top: 580px;
+        width: 450px;
+    }
+    
+    #menu{
+        position: absolute; 
+        top: 100px;
+
+        border-radius: 5%;
+
+        background-color: rgb(48, 48, 48);
+        font-size: larger;
+
+        width: 100%;
+        height: 42%;
+        display: none;
+    }
+    .cabecalho div{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       align-items: center;
+       padding: 0 1.5em;
+    }
+    .cabecalho ul a{
+        padding: 0.8em 60% 1em 2.5em;
         margin: 0.1em 0;
         
     }

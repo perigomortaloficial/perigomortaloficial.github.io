@@ -13,6 +13,70 @@ body{
     background-color: var(--background);
     font-family: 'Titillium Web','Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
+.icon{
+    width: 30px;
+    height: 60px;
+
+    background-color: #333;
+
+    border-radius: 10%;
+
+    position: relative;
+}
+
+.icon:after{
+    content: '';
+
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+    width: 70%;
+    height: 10%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    transition: 1s ease;
+}
+
+.icon:before{
+    content: '';
+
+    position: absolute;
+    top: 60%;
+    left: 45%;
+
+    width: 40%;
+    height: 10%;
+
+    border-radius: 20px;
+
+    background-color: white;
+
+    transition: 1s ease;
+}
+
+#icon:checked ~ label .icon::after{
+    transform: rotate(225deg);
+
+    width: 70%;
+    height: 10%;
+
+    top: 45%;
+    left: 15%;
+}
+
+#icon:checked ~ label .icon::before{
+    transform: rotate(-405deg);
+
+    width: 70%;
+    height: 10%;
+
+    top: 45%;
+    left: 15%;
+}
 .gradient{
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 18%, rgba(9,9,121,1) 96%, rgba(0,212,255,1) 100%);
@@ -476,7 +540,7 @@ table a{
     
     #menu{
         position: absolute; 
-        top: 77px;
+        top: 88px;
         background-color: var(--background);
         width: 100%;
         display: none;

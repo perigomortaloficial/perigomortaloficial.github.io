@@ -16,8 +16,12 @@
         <div class="container cabecalho">
             <div>
 
-                <a href="index.html" onclick="botaoMenu()">
-                    <i class="fas fa-bars"></i>
+                <a href="#" onchange="botaoMenu()">
+                    <input id="icon" type="checkbox" style="display: none;">
+
+            <label for="icon">
+                <div class="icon"></div>
+            </label>
                 </a>
 
                 <a href="index.html">
@@ -111,3 +115,19 @@ A mulher já era investigada por tráfico de pessoas para fins de exploração s
     </div>
     <p>© Copyrigth 2020 - Todos os direitos reservados a <strong>Pedro Kamoda</strong></p>
 </footer>
+
+<script>
+    function botaoMenu() {
+
+        var m = document.getElementById("menu")
+        if (m.style.display == "block") {
+            m.style.display = "none";
+        } else {
+            m.style.display = "block"
+        }
+    }
+
+</script>
+
+</body>
+</html>
